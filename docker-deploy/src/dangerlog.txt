@@ -1,0 +1,20 @@
+1.For concurrency issues, we use two locks to lock the cache and logfile respectively. 
+When a thread acquires the lock, other threads need to wait until it is unlocked. 
+When the number of web pages opened at the same time is greater than five, delays may occur. 
+We learned that using the thread pool will save space and improve operating efficiency.
+
+2.When we encounter an illegal situation, such as when recv()/send() returns -1, 
+or when the format of request/response is illegal or cannot be parsed, 
+or when the open client socket with web server failed and so on, we will catch 
+exception and print the exception to the logfile, or directly print the warning/error 
+information to the logfile, then, exit method gracefully.
+
+3.Now each connection will be established when needed. But if there are many requests, 
+some requests may take a long time to process and we cannot terminate them.
+
+4.We did not find some websites that can test the priority in the cache, 
+such as: must-revalidate takes precedence over max-stale.
+
+5.When we first open youtube, Amazon and other websites, and then open the test website 
+on notion, delays may occur. And when the order of opening is reversed, the running speed 
+will be very fast, and each method will complete running smoothly.

@@ -1,0 +1,108 @@
+
+
+=============== CONNECT: https://www.youtube.com/======================
+1: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 10.172.15.58 @ Wed Mar  1 03:57:23 2023
+3: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 10.172.15.58 @ Wed Mar  1 03:57:24 2023
+4: "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from 10.172.15.58 @ Wed Mar  1 03:57:24 2023
+3: WARNING method name is not GET/POST/CONNECT
+3: ERROR recv error 2
+3: Tunnel closed
+5: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 10.172.15.58 @ Wed Mar  1 03:57:26 2023
+6: "CONNECT www.youtube.com:443 HTTP/1.1" from 10.172.15.58 @ Wed Mar  1 03:57:26 2023
+7: "CONNECT i.ytimg.com:443 HTTP/1.1" from 10.172.15.58 @ Wed Mar  1 03:57:26 2023
+9: "CONNECT safebrowsing.googleapis.com:443 HTTP/1.1" from 10.172.15.58 @ Wed Mar  1 03:57:26 2023
+11: "CONNECT accounts.google.com:443 HTTP/1.1" from 10.172.15.58 @ Wed Mar  1 03:57:26 2023
+9: WARNING method name is not GET/POST/CONNECT
+13: "CONNECT googleads.g.doubleclick.net:443 HTTP/1.1" from 10.172.15.58 @ Wed Mar  1 03:57:27 2023
+14: "CONNECT www.google.com:443 HTTP/1.1" from 10.172.15.58 @ Wed Mar  1 03:57:27 2023
+15: "CONNECT www.gstatic.com:443 HTTP/1.1" from 10.172.15.58 @ Wed Mar  1 03:57:27 2023
+16: "CONNECT yt3.ggpht.com:443 HTTP/1.1" from 10.172.15.58 @ Wed Mar  1 03:57:27 2023
+18: "CONNECT static.doubleclick.net:443 HTTP/1.1" from 10.172.15.58 @ Wed Mar  1 03:57:28 2023
+18: WARNING method name is not GET/POST/CONNECT
+9: ERROR recv error 1
+9: Tunnel closed
+
+================== Get: chunked ===========================
+1: "CONNECT contile-images.services.mozilla.com:443 HTTP/1.1" from 10.172.15.58 @ Wed Mar  1 04:10:16 2023
+2: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 10.172.15.58 @ Wed Mar  1 04:10:16 2023
+3: "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from 10.172.15.58 @ Wed Mar  1 04:10:16 2023
+4: "GET http://www.httpwatch.com/httpgallery/chunked/chunkedimage.aspx HTTP/1.1" from 10.172.15.58 @ Wed Mar  1 04:10:17 2023
+4: not in cache
+4: Requesting "GET http://www.httpwatch.com/httpgallery/chunked/chunkedimage.aspx HTTP/1.1" from www.httpwatch.com
+4: Received "HTTP/1.1 200 OK" from www.httpwatch.com
+4: Responding "HTTP/1.1 200 OK"
+4: NOTE  Chunked
+5: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 10.172.15.58 @ Wed Mar  1 04:10:17 2023
+
+==================== POST ==============================
+5: "POST http://httpbin.org/post HTTP/1.1" from 174.109.72.147 @ Wed Mar  1 04:41:40 2023
+5: Requesting "POST http://httpbin.org/post HTTP/1.1" from httpbin.org
+5: Received "HTTP/1.1 200 OK" from httpbin.org
+5: Responding "HTTP/1.1 200 OK"
+
+
+=================== Cache control: in cache, put and get ======================
+(no-id): NOTE put GET http://httpbin.org/forms/post HTTP/1.1 into cache
+(no-id): NOTE get GET http://httpbin.org/forms/post HTTP/1.1 from cache
+.net:443 HTTP/1.1" from 10.172.15.58 @ Wed Mar  1 03:59:53 2023
+3: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 10.172.15.58 @ Wed Mar  1 03:59:53 2023
+4: "GET http://httpbin.org/forms/post HTTP/1.1" from 10.172.15.58 @ Wed Mar  1 03:59:55 2023
+4: not in cache
+4: Requesting "GET http://httpbin.org/forms/post HTTP/1.1" from httpbin.org
+4: Received "HTTP/1.1 200 OK" from httpbin.org
+4: NOTE  Content Length
+4: Responding "HTTP/1.1 200 OK"
+4: cached expires at Wed Mar  1 08:59:58 2023
+5: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 10.172.15.58 @ Wed Mar  1 03:59:59 2023
+6: "GET http://httpbin.org/forms/post HTTP/1.1" from 10.172.15.58 @ Wed Mar  1 04:00:17 2023
+6: in cache, valid
+6: Responding HTTP/1.1 200 OK
+
+
+==================== Cache control: no_store ========================
+1: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 10.172.15.58 @ Wed Mar  1 04:05:39 2023
+2: "CONNECT contile-images.services.mozilla.com:443 HTTP/1.1" from 10.172.15.58 @ Wed Mar  1 04:05:39 2023
+3: "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from 10.172.15.58 @ Wed Mar  1 04:05:40 2023
+4: "GET http://www.httpwatch.com/httpgallery/caching/imageA/ HTTP/1.1" from 10.172.15.58 @ Wed Mar  1 04:05:41 2023
+4: not in cache
+4: Requesting "GET http://www.httpwatch.com/httpgallery/caching/imageA/ HTTP/1.1" from www.httpwatch.com
+4: Received "HTTP/1.1 200 OK" from www.httpwatch.com
+4: NOTE  Content Length
+4: Responding "HTTP/1.1 200 OK"
+4: not cacheable because response has no_store
+5: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 10.172.15.58 @ Wed Mar  1 04:05:42 2023
+
+
+===================== Cache control: revalidate =======================
+(no-id): NOTE put GET http://detectportal.firefox.com/success.txt HTTP/1.1 into cache
+(no-id): NOTE get GET http://detectportal.firefox.com/success.txt HTTP/1.1 from cache
+(no-id): NOTE put GET http://detectportal.firefox.com/success.txt HTTP/1.1 into cache
+P/1.1" from 10.172.15.58 @ Wed Mar  1 04:25:03 2023
+4: "GET http://detectportal.firefox.com/success.txt HTTP/1.1" from 10.172.15.58 @ Wed Mar  1 04:25:05 2023
+4: not in cache
+4: Requesting "GET http://detectportal.firefox.com/success.txt HTTP/1.1" from detectportal.firefox.com
+4: Received "HTTP/1.1 200 OK" from detectportal.firefox.com
+4: NOTE  Content Length
+4: Responding "HTTP/1.1 200 OK"
+4: cached expires at Tue Feb 28 14:37:17 2023
+5: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 10.172.15.58 @ Wed Mar  1 04:25:05 2023
+6: "GET http://detectportal.firefox.com/success.txt HTTP/1.1" from 10.172.15.58 @ Wed Mar  1 04:25:09 2023
+6: in cache, requires validation
+6: Requesting "GET http://detectportal.firefox.com/success.txt HTTP/1.1" from detectportal.firefox.com
+6: Received "HTTP/1.1 200 OK" from detectportal.firefox.com
+6: NOTE  Content Length
+6: Responding "HTTP/1.1 200 OK"
+6: cached expires at Wed Mar  1 09:09:28 2023
+
+
+===================== 304: not modified ===============
+1: "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from 10.172.15.58 @ Wed Mar  1 04:20:27 2023
+2: "GET http://www.httpwatch.com/httpgallery/methods/retry.png HTTP/1.1" from 10.172.15.58 @ Wed Mar  1 04:20:28 2023
+2: not in cache
+2: Requesting "GET http://www.httpwatch.com/httpgallery/methods/retry.png HTTP/1.1" from www.httpwatch.com
+2: Received "HTTP/1.1 304 Not Modified" from www.httpwatch.com
+2: NOTE  Content Length
+2: Responding "HTTP/1.1 304 Not Modified"
+3: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 10.172.15.58 @ Wed Mar  1 04:20:29 2023
+4: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 10.172.15.58 @ Wed Mar  1 04:20:29 2023
+
